@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>Schedule</title>
+  <style>
+    body {
+        margin: 0;
+    }
+    div {
+        height: 90vh;
+        width: 100vw;
+    }
+    button {
+        --width: calc(100% / 8);
+        --margin: .5%;
+        --color: #222;
+        color: var(--color);
+        height: 100%;
+        font-size: 100%;
+        font-family: Outfit, Arial, Helvetica, sans-serif;
+        width: var(--width);
+        margin-left: var(--margin);
+        margin-right: var(--margin);
+        background: none;
+        border: 2px var(--color) solid;
+    }
+    table {
+        border: 1px solid black;
+        height: 100%;
+        width: 100%;
+        display: table;
+    }
+    tr {
+        border: 1px solid black;
+        height: 14.2857142857%;
+        width: 100%;
+    }
+    td {
+        border: none;
+        height: 100%;
+        width: 10%;
+    }
+    #button-container {
+        height: 10vh;
+        text-align: center;
+    }
+    #Sun-btn {
+        margin-left: 0;
+    }
+    #Sat-btn {
+        margin-right: 0;
+    }
+    .show {
+        width: 90%;
+    }
+    button:hover {
+        background-color: #4441;
+        cursor: pointer;
+    }
+    button.selected {
+        background-color: #4445;
+    }
+    @font-face {
+        font-family: Outfit;
+        src: url("https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtqUYLknw.woff2");
+    }
+  </style>
+</head>
+<body>
+    <div id="button-container">
+        <button id="Sun-btn" class="selected">Sunday</button>
+        <button id="Mon-btn">Monday</button>
+        <button id="Tue-btn">Tuesday</button>
+        <button id="Wed-btn">Wednesday</button>
+        <button id="Thu-btn">Thursday</button>
+        <button id="Fri-btn">Friday</button>
+        <button id="Sat-btn">Saturday</button>
+    </div>
+  <div>
+    <!-- make it dynamically build for easy edits -->
+    <table id="Sun">
+        <tr><td class="timestamp"></td><td class="show"></td></tr>
+        <tr><td class="timestamp"></td><td class="show"></td></tr>
+    </table>
+    <table id="Mon" style="display: none;">
+        <tr><td class="timestamp"></td><td class="show"></td></tr>
+    </table>
+    <table id="Tue" style="display: none;">
+        <tr><td class="timestamp"></td><td class="show"></td></tr>
+    </table>
+    <table id="Wed" style="display: none;">
+       <tr><td class="timestamp"></td><td class="show"></td></tr>
+    </table>
+    <table id="Thu" style="display: none;">
+        <tr><td class="timestamp"></td><td class="show"></td></tr>
+    </table>
+    <table id="Fri" style="display: none;">
+        <tr><td class="timestamp"></td><td class="show"></td></tr>
+    </table>
+    <table id="Sat" style="display: none;">
+        <tr><td class="timestamp"></td><td class="show"></td></tr>
+    </table>
+  </div>
+  <script>
+    let dayTbls = document.getElementsByTagName("table");
+    let dayBtns = document.getElementsByTagName("button");
+    let shows = {
+        sun: [
+            {
+                show: "",
+                time: ""
+            }
+        ],
+        mon: [
+            {
+                show: "",
+                time: ""
+            }
+        ],
+        tue: [
+            {
+                show: "",
+                time: ""
+            }
+        ],
+        wed: [
+            {
+                show: "",
+                time: ""
+            }
+        ],
+        thu: [
+            {
+                show: "",
+                time: ""
+            }
+        ],
+        fri: [
+            {
+                show: "",
+                time: ""
+            }
+        ],
+        sat: [
+            {
+                show: "",
+                time: ""
+            }
+        ]
+    };
+    // init
+    for (let i = 0; i < 7; i++) {
+        // show correct table when button clicked
+        dayBtns[i].addEventListener("click", () => {
+            dayTbls[i].style.display = "table";
+            dayBtns[i].classList.add("selected");
+            for (let j = 0; j < 7; j++) {
+                if (i != j) {
+                    dayTbls[j].style.display = "none";
+                    dayBtns[j].classList.remove("selected");
+                }
+            }
+        });
+        // gets show info from shows var, add to table
+        switch (i) {
+            case 0:
+                for (let i = 0; i < shows.sun.length; i++) {
+                    dayTbls[i].innerHTML += `<tr><td class="timestamp">${shows.sun[i].time}</td><td class="show">${shows.sun[i].show}</td></tr>`;
+                }
+                break;
+            case 1:
+                for (let i = 0; i < shows.mon.length; i++) {
+                    dayTbls[i].innerHTML += `<tr><td class="timestamp">${shows.mon[i].time}</td><td class="show">${shows.mon[i].show}</td></tr>`;
+                }
+                break;
+            case 2:
+                for (let i = 0; i < shows.tue.length; i++) {
+                    dayTbls[i].innerHTML += `<tr><td class="timestamp">${shows.tue[i].time}</td><td class="show">${shows.tue[i].show}</td></tr>`;
+                }
+                break;
+            case 3:
+                for (let i = 0; i < shows.wed.length; i++) {
+                    dayTbls[i].innerHTML += `<tr><td class="timestamp">${shows.wed[i].time}</td><td class="show">${shows.wed[i].show}</td></tr>`;
+                }
+                break;
+            case 4:
+                for (let i = 0; i < shows.thu.length; i++) {
+                    dayTbls[i].innerHTML += `<tr><td class="timestamp">${shows.thu[i].time}</td><td class="show">${shows.thu[i].show}</td></tr>`;
+                }
+                break;
+            case 5:
+                for (let i = 0; i < shows.fri.length; i++) {
+                    dayTbls[i].innerHTML += `<tr><td class="timestamp">${shows.fri[i].time}</td><td class="show">${shows.fri[i].show}</td></tr>`;
+                }
+                break;
+            case 6:
+                for (let i = 0; i < shows.sat.length; i++) {
+                    dayTbls[i].innerHTML += `<tr><td class="timestamp">${shows.sat[i].time}</td><td class="show">${shows.sat[i].show}</td></tr>`;
+                }
+                break;
+        }
+    }
+  </script>
+</body>
+</html>
