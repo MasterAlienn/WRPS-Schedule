@@ -5,12 +5,20 @@
   <meta charset="utf-8">
   <title>Schedule</title>
   <style>
+    * {
+        --table-border-width: 2px;
+    }
     body {
         margin: 0;
     }
+    tbody {
+        height: 0;
+        width: 0;
+        display: inline;
+    }
     div {
         height: 90vh;
-        width: 100vw;
+        max-width: 100%;
     }
     button {
         --width: calc(100% / 8);
@@ -26,25 +34,36 @@
         background: none;
         border: 2px var(--color) solid;
     }
-    table {
-        border: 1px solid black;
+    .table {
+        border: var(--table-border-width) solid black;
         height: 100%;
         width: 100%;
-        display: table;
     }
-    tr {
-        border: 1px solid black;
+    .row {
+        border-bottom: var(--table-border-width) solid black;
         height: 14.2857142857%;
         width: 100%;
+        display: flex;
+        flex-direction: row;
     }
-    td {
+    .cell {
+        display: flex;
         border: none;
         height: 100%;
         width: 10%;
+        align-items: center;
+        padding-left: 1%;
+        padding-right: 1%;
     }
     #button-container {
-        height: 10vh;
+        height: 9vh;
         text-align: center;
+        margin-bottom: 1vh;
+    }
+    #table-container {
+        width: calc(100% - (var(--table-border-width) * 2));
+        display: flex;
+        margin: auto;
     }
     #Sun-btn {
         margin-left: 0;
@@ -54,6 +73,7 @@
     }
     .show {
         width: 90%;
+        text-align: right;
     }
     button:hover {
         background-color: #4441;
@@ -78,83 +98,91 @@
         <button id="Fri-btn">Friday</button>
         <button id="Sat-btn">Saturday</button>
     </div>
-  <div>
+    <div id="table-container">
     <!-- make it dynamically build for easy edits -->
-    <table id="Sun">
-        <tr><td class="timestamp"></td><td class="show"></td></tr>
-        <tr><td class="timestamp"></td><td class="show"></td></tr>
-    </table>
-    <table id="Mon" style="display: none;">
-        <tr><td class="timestamp"></td><td class="show"></td></tr>
-    </table>
-    <table id="Tue" style="display: none;">
-        <tr><td class="timestamp"></td><td class="show"></td></tr>
-    </table>
-    <table id="Wed" style="display: none;">
-       <tr><td class="timestamp"></td><td class="show"></td></tr>
-    </table>
-    <table id="Thu" style="display: none;">
-        <tr><td class="timestamp"></td><td class="show"></td></tr>
-    </table>
-    <table id="Fri" style="display: none;">
-        <tr><td class="timestamp"></td><td class="show"></td></tr>
-    </table>
-    <table id="Sat" style="display: none;">
-        <tr><td class="timestamp"></td><td class="show"></td></tr>
-    </table>
+    <table class="table" id="Sun"></table>
+    <table class="table" id="Mon" style="display: none;"></table>
+    <table class="table" id="Tue" style="display: none;"></table>
+    <table class="table" id="Wed" style="display: none;"></table>
+    <table class="table" id="Thu" style="display: none;"></table>
+    <table class="table" id="Fri" style="display: none;"></table>
+    <table class="table" id="Sat" style="display: none;"></table>
   </div>
   <script>
-    let dayTbls = document.getElementsByTagName("table");
+    let dayTbls = document.querySelectorAll("table");
     let dayBtns = document.getElementsByTagName("button");
     let shows = {
-        sun: [
-            {
-                show: "",
-                time: ""
-            }
-        ],
-        mon: [
-            {
-                show: "",
-                time: ""
-            }
-        ],
-        tue: [
-            {
-                show: "",
-                time: ""
-            }
-        ],
-        wed: [
-            {
-                show: "",
-                time: ""
-            }
-        ],
-        thu: [
-            {
-                show: "",
-                time: ""
-            }
-        ],
-        fri: [
-            {
-                show: "",
-                time: ""
-            }
-        ],
-        sat: [
-            {
-                show: "",
-                time: ""
-            }
-        ]
-    };
+    "sun": [
+        {
+            "show": "Test0",
+            "description": "Test0",
+            "time": "2:00"
+        },
+        {
+            "show": "Test1",
+            "description": "Test1",
+            "time": "3:00"
+        }
+    ],
+    "mon": [
+        {
+            "show": "",
+            "description": "",
+            "time": ""
+        }
+    ],
+    "tue": [
+        {
+            "show": "",
+            "description": "",
+            "time": ""
+        }
+    ],
+    "wed": [
+        {
+            "show": "",
+            "description": "",
+            "time": ""
+        }
+    ],
+    "thu": [
+        {
+            "show": "",
+            "description": "",
+            "time": ""
+        }
+    ],
+    "fri": [
+        {
+            "show": "",
+            "description": "",
+            "time": ""
+        }
+    ],
+    "sat": [
+        {
+            "show": "",
+            "description": "",
+            "time": ""
+        }
+    ]
+};
+    // let shows = fetch("https://raw.githubusercontent.com/MasterAlienn/schedule/refs/heads/main/schedule.json").then(res => {
+    //     if (!res.ok) {
+    //         throw new Error("Response not ok");
+    //         return;
+    //     }
+    //     return res.json();
+    // }).then(data => {
+    //     return data;
+    // }).catch(err => {
+    //     console.error(err);
+    // });
     // init
     for (let i = 0; i < 7; i++) {
-        // show correct table when button clicked
+        // show correct div when button clicked
         dayBtns[i].addEventListener("click", () => {
-            dayTbls[i].style.display = "table";
+            dayTbls[i].style.display = "inline";
             dayBtns[i].classList.add("selected");
             for (let j = 0; j < 7; j++) {
                 if (i != j) {
@@ -163,41 +191,41 @@
                 }
             }
         });
-        // gets show info from shows var, add to table
+        // gets show info from shows var, add to div
         switch (i) {
             case 0:
-                for (let i = 0; i < shows.sun.length; i++) {
-                    dayTbls[i].innerHTML += `<tr><td class="timestamp">${shows.sun[i].time}</td><td class="show">${shows.sun[i].show}</td></tr>`;
+                for (let j = 0; j < shows.sun.length; j++) {
+                    dayTbls[i].innerHTML += `<tr class="row"><td class="cell timestamp">${shows.sun[j].time}</td><td class="cell show">${shows.sun[j].show}</td></tr>`;
                 }
                 break;
             case 1:
-                for (let i = 0; i < shows.mon.length; i++) {
-                    dayTbls[i].innerHTML += `<tr><td class="timestamp">${shows.mon[i].time}</td><td class="show">${shows.mon[i].show}</td></tr>`;
+                for (let j = 0; j < shows.mon.length; j++) {
+                    dayTbls[i].innerHTML += `<tr class="row"><td class="cell timestamp">${shows.mon[j].time}</td><td class="cell show">${shows.mon[j].show}</td></tr>`;
                 }
                 break;
             case 2:
-                for (let i = 0; i < shows.tue.length; i++) {
-                    dayTbls[i].innerHTML += `<tr><td class="timestamp">${shows.tue[i].time}</td><td class="show">${shows.tue[i].show}</td></tr>`;
+                for (let j = 0; j < shows.tue.length; j++) {
+                    dayTbls[i].innerHTML += `<tr class="row"><td class="cell timestamp">${shows.tue[j].time}</td><td class="cell show">${shows.tue[j].show}</td></tr>`;
                 }
                 break;
             case 3:
-                for (let i = 0; i < shows.wed.length; i++) {
-                    dayTbls[i].innerHTML += `<tr><td class="timestamp">${shows.wed[i].time}</td><td class="show">${shows.wed[i].show}</td></tr>`;
+                for (let j = 0; j < shows.wed.length; j++) {
+                    dayTbls[i].innerHTML += `<tr class="row"><td class="cell timestamp">${shows.wed[j].time}</td><td class="cell show">${shows.wed[j].show}</td></tr>`;
                 }
                 break;
             case 4:
-                for (let i = 0; i < shows.thu.length; i++) {
-                    dayTbls[i].innerHTML += `<tr><td class="timestamp">${shows.thu[i].time}</td><td class="show">${shows.thu[i].show}</td></tr>`;
+                for (let j = 0; j < shows.thu.length; j++) {
+                    dayTbls[i].innerHTML += `<tr class="row"><td class="cell timestamp">${shows.thu[j].time}</td><td class="cell show">${shows.thu[j].show}</td></tr>`;
                 }
                 break;
             case 5:
-                for (let i = 0; i < shows.fri.length; i++) {
-                    dayTbls[i].innerHTML += `<tr><td class="timestamp">${shows.fri[i].time}</td><td class="show">${shows.fri[i].show}</td></tr>`;
+                for (let j = 0; j < shows.fri.length; j++) {
+                    dayTbls[i].innerHTML += `<tr class="row"><td class="cell timestamp">${shows.fri[j].time}</td><td class="cell show">${shows.fri[j].show}</td></tr>`;
                 }
                 break;
             case 6:
-                for (let i = 0; i < shows.sat.length; i++) {
-                    dayTbls[i].innerHTML += `<tr><td class="timestamp">${shows.sat[i].time}</td><td class="show">${shows.sat[i].show}</td></tr>`;
+                for (let j = 0; j < shows.sat.length; j++) {
+                    dayTbls[i].innerHTML += `<tr class="row"><td class="cell timestamp">${shows.sat[j].time}</td><td class="cell show">${shows.sat[j].show}</td></tr>`;
                 }
                 break;
         }
