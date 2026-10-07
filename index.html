@@ -71,9 +71,19 @@
     #Sat-btn {
         margin-right: 0;
     }
+    .info-container {
+        width: 90%;
+    }
     .show {
         width: 90%;
         text-align: right;
+    }
+    .desc {
+
+    }
+    .img-cell {
+        width: 10%;
+        /* add another container so image can be to the right */
     }
     button:hover {
         background-color: #4441;
@@ -111,59 +121,84 @@
   <script>
     let dayTbls = document.querySelectorAll("table");
     let dayBtns = document.getElementsByTagName("button");
+    // insecure remove before upload; doesn't work
+    let ts = fetch("https://sheets.googleapis.com/v4/spreadsheets/10VMoWJWesOhME8liroKbXDgW-GUJav2uOVr4uyG1-vw?", {
+  "type": "service_account",
+  "project_id": "wrps-web-schedule",
+  "private_key_id": "4f44a2cb2b5036cf0abc4dab9abd99feff888a59",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCun2VaHEk4o3IK\n6AK6ylCnNgS+uwQlWaFx3DzlEztb+HzVVbK7IxMrchuewbRUvHxu1CLMw8JsOC+5\n2IcrBerS3y5cHftKMZn8GIKu2/ulM7Xe5O/8w83vnvNiLJkLaSK/ySlXI+/DKcf/\n+MrH9dlrNzU1tzImvtV8+T+UFqQB+mKxPIQwZe7+vEiBn1545nTe4SXJUCSztTcN\nMDnROf+cOT+r4YEGlm6vvK3VpY1a72E+ijK4WQuNWa2uq7U1R8c3uzHeKuyuLCrp\n9rZU3aLWxw9ug/4823FeJ8FLmwVv8TZ+//rjqvCJBC+sW9ktUm3Im6HMBUMelTIc\nfPncar0RAgMBAAECggEAApUiaVkCPzdxnBYu1ibgVvy+SLjY2JmRAO9WKjgk2Fke\nNYSBMnHUGoAjRu+L9HXeLEBwbFFX2oRhNlEsvJbnkGtTEvMxkHkX0ynkouPnfpu7\nbJq7ruQRc2IJLPJGaCwLosT9mseSB/Oh/Nfn3dm1t7d3Dr6RHBAV9bV0+oJ0NgBA\n/IDT2+Cbhd6CckD9ifPGPv2cFSaphDz6+kuIDinHlVfDMJKSymHMcj8f4jWbrIRi\nShuVRCCmH5sgSnJ5BTzYIjXiZ29peaHH+vR77yZZLYCaGQqZg3piiRDuuEzBPQQ7\nIcxl1Q3sHt+ei+IBtQ7mdksQfipvvyM9Uo2p45pALQKBgQDYIsARrfyvZgRZcwEu\nGEAWCc7ovqau8+Balx6w22I+Z/7Ayc1Bg7rr+zRpyR5fQ1jUigF8se3ftgUhie7N\n93pqHcsQqZZo3ROOrPG9fBhJQPzoV+7WHLCaIFceq1PB5z/JOprylYzidZbz+1Ir\nFjcL0u/vTjST9EFxEhGYdIF2VQKBgQDO1IcMcDISxJ7CSPCEg/We4LsPFOXmSqDW\nk+ltkoK1WiuyO3sX+IAJqNOBkS901/xJntf7GnLDtbiLdr5/HzMmi7Qk0ZVD0llb\nRJ9Qf/OM/wjKA3KbuXNnmNA6w8813CnkpHYIpd7iODVTmBB1Fr+YUVBeHBvZmnNT\nv74hv5APzQKBgHcwqrTVOuzLGIjvh+4Qh37fx8/IG4mNieLLRayIPyRlGzLb1qpT\nZ8htDplrxKkKLbl/pZRLVv+wlCHLu/qviD1u0qYMr5qCmB9tNh6liYsUIKRMobRH\nvAgy33hVSOo8iYuCGyK94CSebjF8HfMO3CpUF+bjPNF+uHwPV864KRDFAoGAapKV\n97HEC2mmyENfM1jvcesoV9AT2gLwN0DF0cDheuK4i0Ec3zAbgV6thSCzTEiSZbjk\nXy20nuV+7tXDuKrx51WrACHCAM1dX6rPUGJts2QiOj1mi5kWPvY9rVoB5iXIrFiV\nvUUCwJvn1mgPatXK6YhUmflv3EM6U5gEN02GxK0CgYBclVrTK8opIWtR20CinZnh\ndedByyq9ncMWJ2t1tjAgwDM5VLENmR5lK8vi2B+U88Z+/0gWPXwhcYq7qybzGFhC\noio7PrrjhkM93OBMmQetEMHSYg0wyNTVZfhnHTqzYa7JQmanCcfztZbTzljtKDnx\n/0iycmtdx/r4bdayPDkxNA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "access@wrps-web-schedule.iam.gserviceaccount.com",
+  "client_id": "116350482915356226187",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/access%40wrps-web-schedule.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+).then(res => {
+        return res.text();
+    });
     let shows = {
     "sun": [
         {
             "show": "Test0",
             "description": "Test0",
-            "time": "2:00"
+            "time": "2:00",
+            "imgUrl": ""
         },
         {
             "show": "Test1",
             "description": "Test1",
-            "time": "3:00"
+            "time": "3:00",
+            "imgUrl": ""
         }
     ],
     "mon": [
         {
             "show": "",
             "description": "",
-            "time": ""
+            "time": "",
+            "imgUrl": ""
         }
     ],
     "tue": [
         {
             "show": "",
             "description": "",
-            "time": ""
+            "time": "",
+            "imgUrl": ""
         }
     ],
     "wed": [
         {
             "show": "",
             "description": "",
-            "time": ""
+            "time": "",
+            "imgUrl": ""
         }
     ],
     "thu": [
         {
             "show": "",
             "description": "",
-            "time": ""
+            "time": "",
+            "imgUrl": ""
         }
     ],
     "fri": [
         {
             "show": "",
             "description": "",
-            "time": ""
+            "time": "",
+            "imgUrl": ""
         }
     ],
     "sat": [
         {
             "show": "",
             "description": "",
-            "time": ""
+            "time": "",
+            "imgUrl": ""
         }
     ]
 };
@@ -195,37 +230,37 @@
         switch (i) {
             case 0:
                 for (let j = 0; j < shows.sun.length; j++) {
-                    dayTbls[i].innerHTML += `<tr class="row"><td class="cell timestamp">${shows.sun[j].time}</td><td class="cell show">${shows.sun[j].show}</td></tr>`;
+                    dayTbls[i].innerHTML += `<tr class="row"><td class="cell timestamp">${shows.sun[j].time}</td><div class=\"info-container\"><td class="cell show">${shows.sun[j].show}</td><td class="cell desc">${shows.sun[j].description}</td><td class="cell img-cell"><img src=\"${shows.sun[j].imgUrl}\"/></td></div></tr>`;
                 }
                 break;
             case 1:
                 for (let j = 0; j < shows.mon.length; j++) {
-                    dayTbls[i].innerHTML += `<tr class="row"><td class="cell timestamp">${shows.mon[j].time}</td><td class="cell show">${shows.mon[j].show}</td></tr>`;
+                    dayTbls[i].innerHTML += `<tr class="row"><td class="cell timestamp">${shows.mon[j].time}</td><div class=\"info-container\"><td class="cell show">${shows.mon[j].show}</td><td class="cell desc">${shows.mon[j].description}</td><td class="cell img-cell"><img src=\"${shows.mon[j].imgUrl}\"/></td></div></tr>`;
                 }
                 break;
             case 2:
                 for (let j = 0; j < shows.tue.length; j++) {
-                    dayTbls[i].innerHTML += `<tr class="row"><td class="cell timestamp">${shows.tue[j].time}</td><td class="cell show">${shows.tue[j].show}</td></tr>`;
+                    dayTbls[i].innerHTML += `<tr class="row"><td class="cell timestamp">${shows.tue[j].time}</td><div class=\"info-container\"><td class="cell show">${shows.tue[j].show}</td><td class="cell desc">${shows.tue[j].description}</td><td class="cell img-cell"><img src=\"${shows.tue[j].imgUrl}\"/></td></div></tr>`;
                 }
                 break;
             case 3:
                 for (let j = 0; j < shows.wed.length; j++) {
-                    dayTbls[i].innerHTML += `<tr class="row"><td class="cell timestamp">${shows.wed[j].time}</td><td class="cell show">${shows.wed[j].show}</td></tr>`;
+                    dayTbls[i].innerHTML += `<tr class="row"><td class="cell timestamp">${shows.wed[j].time}</td><div class=\"info-container\"><td class="cell show">${shows.wed[j].show}</td><td class="cell desc">${shows.wed[j].description}</td><td class="cell img-cell"><img src=\"${shows.wed[j].imgUrl}\"/></td></div></tr>`;
                 }
                 break;
             case 4:
                 for (let j = 0; j < shows.thu.length; j++) {
-                    dayTbls[i].innerHTML += `<tr class="row"><td class="cell timestamp">${shows.thu[j].time}</td><td class="cell show">${shows.thu[j].show}</td></tr>`;
+                    dayTbls[i].innerHTML += `<tr class="row"><td class="cell timestamp">${shows.thu[j].time}</td><div class=\"info-container\"><td class="cell show">${shows.thu[j].show}</td><td class="cell desc">${shows.thu[j].description}</td><td class="cell img-cell"><img src=\"${shows.thu[j].imgUrl}\"/></td></div></tr>`;
                 }
                 break;
             case 5:
                 for (let j = 0; j < shows.fri.length; j++) {
-                    dayTbls[i].innerHTML += `<tr class="row"><td class="cell timestamp">${shows.fri[j].time}</td><td class="cell show">${shows.fri[j].show}</td></tr>`;
+                    dayTbls[i].innerHTML += `<tr class="row"><td class="cell timestamp">${shows.fri[j].time}</td><div class=\"info-container\"><td class="cell show">${shows.fri[j].show}</td><td class="cell desc">${shows.fri[j].description}</td><td class="cell img-cell"><img src=\"${shows.fri[j].imgUrl}\"/></td></div></tr>`;
                 }
                 break;
             case 6:
                 for (let j = 0; j < shows.sat.length; j++) {
-                    dayTbls[i].innerHTML += `<tr class="row"><td class="cell timestamp">${shows.sat[j].time}</td><td class="cell show">${shows.sat[j].show}</td></tr>`;
+                    dayTbls[i].innerHTML += `<tr class="row"><td class="cell timestamp">${shows.sat[j].time}</td><div class=\"info-container\"><td class="cell show">${shows.sat[j].show}</td><td class="cell desc">${shows.sat[j].description}</td><td class="cell img-cell"><img src=\"${shows.sat[j].imgUrl}\"/></td></div></tr>`;
                 }
                 break;
         }
