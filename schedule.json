@@ -1,0 +1,58 @@
+{
+    "sun": [
+        {
+            "show": "",
+            "description": "",
+            "time": "",
+            "imgUrl": ""
+        }
+    ],
+    "mon": [
+        {
+            "show": "",
+            "description": "",
+            "time": "",
+            "imgUrl": ""
+        }
+    ],
+    "tue": [
+        {
+            "show": "",
+            "description": "",
+            "time": "",
+            "imgUrl": ""
+        }
+    ],
+    "wed": [
+        {
+            "show": "",
+            "description": "",
+            "time": "",
+            "imgUrl": ""
+        }
+    ],
+    "thu": [
+        {
+            "show": "",
+            "description": "",
+            "time": "",
+            "imgUrl": ""
+        }
+    ],
+    "fri": [
+        {
+            "show": "",
+            "description": "",
+            "time": "",
+            "imgUrl": ""
+        }
+    ],
+    "sat": [
+        {
+            "show": "",
+            "description": "",
+            "time": "",
+            "imgUrl": ""
+        }
+    ]
+}
