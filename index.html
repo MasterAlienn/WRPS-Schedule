@@ -7,6 +7,7 @@
   <style>
     * {
         --table-border-width: 2px;
+        font-family: Outfit, Arial, Helvetica, sans-serif;
     }
     body {
         margin: 0;
@@ -26,8 +27,7 @@
         --color: #222;
         color: var(--color);
         height: 100%;
-        font-size: 100%;
-        font-family: Outfit, Arial, Helvetica, sans-serif;
+        font-size: larger;
         width: var(--width);
         margin-left: var(--margin);
         margin-right: var(--margin);
@@ -97,8 +97,7 @@
 
     }
     .img-cell {
-        max-height: 150px;
-        min-height: 50px;
+        height: 100%;
         width: 20%;
         align-items: center;
     }
@@ -106,7 +105,7 @@
         height: 100%;
         width: 10%;
         text-align: center;
-        font-size: larger;
+        font-size: xx-large;
         display: inline;
     }
     button:hover {
@@ -118,7 +117,7 @@
     }
     @font-face {
         font-family: Outfit;
-        src: url("https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtqUYLknw.woff2");
+        src: url("https://github.com/MasterAlienn/WRPS-Schedule/raw/refs/heads/main/assets/QGYvz_MVcBeNP4NJtEtqUYLknw.woff2");
     }
   </style>
 </head>
@@ -142,84 +141,20 @@
     <table class="table" id="Fri" style="display: none;"></table>
     <table class="table" id="Sat" style="display: none;"></table>
   </div>
-  <script>
+  <script type="module">
     let dayTbls = document.querySelectorAll("table");
     let dayBtns = document.getElementsByTagName("button");
-    let shows = {
-    "sun": [
-        {
-            "show": "Test0",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum provident lorem corrupti enim. Repudiandae excepteur incididunt voluptates amet anim. Facere esse sit sint sapiente expedita aliqua cillum labore. Dignissimos magna similique hic eos nisi dolor, tenetur rerum.",
-            "time": "2:00",
-            "imgUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJsAAACUCAMAAACz6atrAAAAXVBMVEX19viRmKD6+/24vMDX2t2JkZeRlp2NlJuzuLzW2N7r7O+Lk5yVnaPz+PqRmqGRmKL0+PbKz9Pj5+u8wsaJjpjd4eWiqK7Hyc2AipObo6nCyc+nrbHQ1diws7uanqbYdD7mAAAEZElEQVR4nO2bbXuyIBSA5fhCE4W0rFmu//8zn4O10sRERfZ8OPd2bde20rsDHA7QgoAgCIIgCIIgCIIgCIIgCKID+GO2WRn5ogxm2UFRx/7IijluIVeSSfzEL5Ix/dn+xNpfdb+t/jN+CB7aR+1yZJLzxBNcMnGxa9Y8CHii4t1X9OWHXawYT+3coDgyccAXMncALUHf5iBYXFjdLIcwlqzUQzvfHmwmKBmLQ1s3wTK7GLshvTEeQm7xSO2m/Lplc9w8x43cFuHSbckE/Ql3broMOJ+j1J2eG7d9AOkl+z4i36pIHdk5ihtUtVBYB2h4XbmRc+MGRdzWFS2Sx5ZTtAe3/T5KFOtydBI5B24QpOyd2kWuWe+2bwsG2XfjZweBc9GmKbZo8hY4uV7NSZtGYtCmLC7XB86F22HoJi2Lwq3dcIUzdBMOOpyLuIWGNm2L9//A7TCMm22hv7lbYxoL49kXMO34cgsCNXT7kEPCY2MXUwe5dw8/OM/bdjcohBJ2lYqLuEGayDe3sTlrr5OhVLVV9nPSpliG9N2+o5F7A94P4VdvbgGc+aNVOc5fnI/USABpzdrHiZ3FLV3V5AW715Y4rwrZjF0PTuLuxmxysys3SMObEkIck+ww3tN3+AIerc+nB6vDtUzaXA4HvZgZfcSFP9UkkxVM5Dnna8BxM4h4p8qT7JZ6dPsEVqCV7LolTNQTz/HmBkEi+sWx4rvPXc7bnkN6Gs66E8WKLzfYccOsy8dytE+3ds/TgPgk58cNGpOYJvsw7Xtxg+p9GfYK3Gn8ij7cYLi2fg1W8fOnbunJMAyeHEe3wrd328PVULN3m3VsabG9W25a6vTgI2uLzd2wBp9yY8p8VWdukOqlw+BCUAljYusHzjyzOqvfvnhtSFV5mU2aYUkirhu6QSSVuA7k9vltWk1jnFnduOVRjNk1Hib562Rfa+OGac5Qo7tZZ0X3iZyfAqxlfy8GOIvy94XrKIZtWCf7lk38uAHvRQ7O38xWDR9YuXfDqMX6DL9tHX56yUH1Wh5YwOt3i/VuedGtzDByj1QC5egEPyJ3wmcGHZXVbtjXencQj8jhMplPZ7YOUh8y90TWukExfPllu4tlNUT7vG3arXTTfU31N/BlOyCwBpezwqafqZJeGbzKDaAw3F/pAXH+XHuMkXQ3mNa5NZhyDXY8K5IZI/SF7CWhNW7QcJPZ49RtiVsiuzPrCjcozGundYjX1txyN4xasoEb48/ButgNLltETfOs0Ze65c3MrD+D37OwhW56K20zN5bd5Za5tccdGzUp01NLvtyteFYe23D8WeqGKXfDBm2JdY2+wA2KkZTrEtHAfDfYJuUOwAX1TLdbqqPmA3Er00wJ2/cNnmOpmjNfNFMukSsSqyOS1q3EWi3bdHz24FjjWL8lQZ9Fyvu5kCfEj/XpdZr56Wu/JDO2hiC4Ku4PeZ33VuLqEu78EF4Gi+nJ2P23/79AEARBEARBEARBEARBEATxZ/wDoddfjWwyB48AAAAASUVORK5CYII="
-        },
-        {
-            "show": "Test1",
-            "description": "Test1",
-            "time": "3:00",
-            "imgUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJsAAACUCAMAAACz6atrAAAAXVBMVEX19viRmKD6+/24vMDX2t2JkZeRlp2NlJuzuLzW2N7r7O+Lk5yVnaPz+PqRmqGRmKL0+PbKz9Pj5+u8wsaJjpjd4eWiqK7Hyc2AipObo6nCyc+nrbHQ1diws7uanqbYdD7mAAAEZElEQVR4nO2bbXuyIBSA5fhCE4W0rFmu//8zn4O10sRERfZ8OPd2bde20rsDHA7QgoAgCIIgCIIgCIIgCIIgCKID+GO2WRn5ogxm2UFRx/7IijluIVeSSfzEL5Ix/dn+xNpfdb+t/jN+CB7aR+1yZJLzxBNcMnGxa9Y8CHii4t1X9OWHXawYT+3coDgyccAXMncALUHf5iBYXFjdLIcwlqzUQzvfHmwmKBmLQ1s3wTK7GLshvTEeQm7xSO2m/Lplc9w8x43cFuHSbckE/Ql3broMOJ+j1J2eG7d9AOkl+z4i36pIHdk5ihtUtVBYB2h4XbmRc+MGRdzWFS2Sx5ZTtAe3/T5KFOtydBI5B24QpOyd2kWuWe+2bwsG2XfjZweBc9GmKbZo8hY4uV7NSZtGYtCmLC7XB86F22HoJi2Lwq3dcIUzdBMOOpyLuIWGNm2L9//A7TCMm22hv7lbYxoL49kXMO34cgsCNXT7kEPCY2MXUwe5dw8/OM/bdjcohBJ2lYqLuEGayDe3sTlrr5OhVLVV9nPSpliG9N2+o5F7A94P4VdvbgGc+aNVOc5fnI/USABpzdrHiZ3FLV3V5AW715Y4rwrZjF0PTuLuxmxysys3SMObEkIck+ww3tN3+AIerc+nB6vDtUzaXA4HvZgZfcSFP9UkkxVM5Dnna8BxM4h4p8qT7JZ6dPsEVqCV7LolTNQTz/HmBkEi+sWx4rvPXc7bnkN6Gs66E8WKLzfYccOsy8dytE+3ds/TgPgk58cNGpOYJvsw7Xtxg+p9GfYK3Gn8ij7cYLi2fg1W8fOnbunJMAyeHEe3wrd328PVULN3m3VsabG9W25a6vTgI2uLzd2wBp9yY8p8VWdukOqlw+BCUAljYusHzjyzOqvfvnhtSFV5mU2aYUkirhu6QSSVuA7k9vltWk1jnFnduOVRjNk1Hib562Rfa+OGac5Qo7tZZ0X3iZyfAqxlfy8GOIvy94XrKIZtWCf7lk38uAHvRQ7O38xWDR9YuXfDqMX6DL9tHX56yUH1Wh5YwOt3i/VuedGtzDByj1QC5egEPyJ3wmcGHZXVbtjXencQj8jhMplPZ7YOUh8y90TWukExfPllu4tlNUT7vG3arXTTfU31N/BlOyCwBpezwqafqZJeGbzKDaAw3F/pAXH+XHuMkXQ3mNa5NZhyDXY8K5IZI/SF7CWhNW7QcJPZ49RtiVsiuzPrCjcozGundYjX1txyN4xasoEb48/ButgNLltETfOs0Ze65c3MrD+D37OwhW56K20zN5bd5Za5tccdGzUp01NLvtyteFYe23D8WeqGKXfDBm2JdY2+wA2KkZTrEtHAfDfYJuUOwAX1TLdbqqPmA3Er00wJ2/cNnmOpmjNfNFMukSsSqyOS1q3EWi3bdHz24FjjWL8lQZ9Fyvu5kCfEj/XpdZr56Wu/JDO2hiC4Ku4PeZ33VuLqEu78EF4Gi+nJ2P23/79AEARBEARBEARBEARBEATxZ/wDoddfjWwyB48AAAAASUVORK5CYII="
+    let shows = await fetch("https://github.com/MasterAlienn/WRPS-Schedule/raw/refs/heads/main/schedule.json").then(res => {
+        if (!res.ok) {
+            throw new Error("Response not ok");
+            return;
         }
-    ],
-    "mon": [
-        {
-            "show": "",
-            "description": "",
-            "time": "",
-            "imgUrl": ""
-        }
-    ],
-    "tue": [
-        {
-            "show": "",
-            "description": "",
-            "time": "",
-            "imgUrl": ""
-        }
-    ],
-    "wed": [
-        {
-            "show": "",
-            "description": "",
-            "time": "",
-            "imgUrl": ""
-        }
-    ],
-    "thu": [
-        {
-            "show": "",
-            "description": "",
-            "time": "",
-            "imgUrl": ""
-        }
-    ],
-    "fri": [
-        {
-            "show": "",
-            "description": "",
-            "time": "",
-            "imgUrl": ""
-        }
-    ],
-    "sat": [
-        {
-            "show": "",
-            "description": "",
-            "time": "",
-            "imgUrl": ""
-        }
-    ]
-};
-    // let shows = fetch("https://raw.githubusercontent.com/MasterAlienn/schedule/refs/heads/main/schedule.json").then(res => {
-    //     if (!res.ok) {
-    //         throw new Error("Response not ok");
-    //         return;
-    //     }
-    //     return res.json();
-    // }).then(data => {
-    //     return data;
-    // }).catch(err => {
-    //     console.error(err);
-    // });
+        return res.json();
+    }).then(data => {
+        return data;
+    }).catch(err => {
+        console.error(err);
+    });
     // init
     for (let i = 0; i < 7; i++) {
         // show correct div when button clicked
