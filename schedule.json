@@ -1,10 +1,10 @@
 {
     "sun": [
         {
-            "show": "",
-            "description": "",
-            "time": "",
-            "imgUrl": ""
+            "show": "WITH GOOD REASON",
+            "description": "Award-winning program by the Virginia Center for Humanities.",
+            "time": "8:00 AM",
+            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/WGRpromo.png"
         }
     ],
     "mon": [
