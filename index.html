@@ -44,6 +44,7 @@
         height: 100%;
         width: 100%;
         display: inline;
+        overflow: scroll;
     }
     .row {
         border-bottom: var(--table-border-width) solid black;
@@ -117,7 +118,7 @@
     }
     @font-face {
         font-family: Outfit;
-        src: url("https://github.com/MasterAlienn/WRPS-Schedule/raw/refs/heads/main/assets/QGYvz_MVcBeNP4NJtEtqUYLknw.woff2");
+        src: url("https://masteralienn.github.io/WRPS-Schedule/assets/QGYvz_MVcBeNP4NJtEtqUYLknw.woff2");
     }
   </style>
 </head>
@@ -144,7 +145,7 @@
   <script type="module">
     let dayTbls = document.querySelectorAll("table");
     let dayBtns = document.getElementsByTagName("button");
-    let shows = await fetch("https://github.com/MasterAlienn/WRPS-Schedule/raw/refs/heads/main/schedule.json").then(res => {
+    let shows = await fetch("https://masteralienn.github.io/WRPS-Schedule/schedule.json").then(res => {
         if (!res.ok) {
             throw new Error("Response not ok");
             return;
