@@ -227,18 +227,84 @@
     ],
     "fri": [
         {
-            "show": "",
+            "show": "Climate Connections",
+            "description": "A quick program focusing on climate change from Yale University.",
+            "time": "7:00 AM",
+            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/Yale Climate Connections.001.png"
+        },
+        {
+            "show": "Guest DJ's, Speciality Shows",
             "description": "",
-            "time": "",
-            "imgUrl": ""
+            "time": "11:00 AM",
+            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/Guest DJs, Speciality Programs and more!.png"
+        },
+        {
+            "show": "Lunch with the Locals",
+            "description": "Local Artists from the New England Area! Submit your tracks for consideration to music@wrpsrockland.com!",
+            "time": "12:00 PM",
+            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/Lunch (1920 × 1080 px).jpeg"
+        },
+        {
+            "show": "High Voltage Full Feature Fridays",
+            "description": "Get your requests in with Lady Lila - from classic rock to hardcore!",
+            "time": "1:00 PM",
+            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/HighVoltageRadio copy.png"
+        },
+        {
+            "show": "Soul Session - Live!",
+            "description": "DJ DFG spins soul, R&B and all your favorites!",
+            "time": "3:00 PM",
+            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/SoulSession.png"
+        },
+        {
+            "show": "The Drive at 5",
+            "description": "Kick off your weekend with DJ Keith DeSutter as he mixes local artists with a little bit of everything else!",
+            "time": "5:00 PM",
+            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/FridayDrive.png"
+        },
+        {
+            "show": "Rocco's Rewind",
+            "description": "DJ Rocco from Rockland and occasional special guests present when music was great!",
+            "time": "7:00 PM",
+            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/Guest DJs, Speciality Programs and more!.png"
+        },
+        {
+            "show": "'80s at 8 and '90s at 9",
+            "description": "Deep cuts from our own collection!",
+            "time": "8:00 PM",
+            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/80s90s-01.png"
         }
     ],
     "sat": [
         {
-            "show": "",
-            "description": "",
-            "time": "",
-            "imgUrl": ""
+            "show": "Rock Land",
+            "description": "Join Julie Devereaux as she spins album cuts and music you just won't here anywhere else!",
+            "time": "10:00 AM",
+            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/Guest DJs, Speciality Programs and more!.png"
+        },
+        {
+            "show": "Lunch with the Locals",
+            "description": "Local Artists from the New England Area! Submit your tracks for consideration to music@wrpsrockland.com!",
+            "time": "12:00 PM",
+            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/Lunch (1920 × 1080 px).jpeg"
+        },
+        {
+            "show": "Metafaction Productions",
+            "description": "East coast artists in a multi-genre program!",
+            "time": "1:00 PM",
+            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/Guest DJs, Speciality Programs and more!.png"
+        },
+        {
+            "show": "The Retro Show",
+            "description": "DJ Cleo and his amazing mis from the 60s to the 90s!",
+            "time": "5:00 PM",
+            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/RetroShow.png"
+        },
+        {
+            "show": "'80s at 8 and '90s at 9",
+            "description": "Deep cuts from our own collection!",
+            "time": "8:00 PM",
+            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/80s90s-01.png"
         }
     ]
 }
