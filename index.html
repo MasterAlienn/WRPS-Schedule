@@ -38,6 +38,17 @@
     img {
         width: 100%;
         height: 100%;
+        cursor: pointer;
+    }
+    dialog {
+        padding: 0;
+        border: 0;
+        height: fit-content;
+        width: fit-content;
+        background: #0000;
+    }
+    dialog::backdrop {
+        background-color: #2223;
     }
     .table {
         border: var(--table-border-width) solid black;
@@ -142,9 +153,11 @@
     <table class="table" id="Fri" style="display: none;"></table>
     <table class="table" id="Sat" style="display: none;"></table>
   </div>
+  <dialog><img/></dialog>
   <script type="module">
     let dayTbls = document.querySelectorAll("table");
     let dayBtns = document.getElementsByTagName("button");
+    let dialog = document.querySelector("dialog");
     let shows = await fetch("https://masteralienn.github.io/WRPS-Schedule/schedule.json").then(res => {
         if (!res.ok) {
             throw new Error("Response not ok");
@@ -173,41 +186,51 @@
         switch (i) {
             case 0:
                 for (let j = 0; j < shows.sun.length; j++) {
-                    dayTbls[i].innerHTML += `<tr class="row"><td class="cell timestamp">${shows.sun[j].time}</td><td class=\"info-container\"><div class="cell show">${shows.sun[j].show}</div><div class="cell desc">${shows.sun[j].description}</div></td><td class="cell img-cell"><img src=\"${shows.sun[j].imgUrl}\"/></td></tr>`;
+                    dayTbls[i].innerHTML += `<tr class="row"><td class="cell timestamp">${shows.sun[j].time}</td><td class="info-container"><div class="cell show">${shows.sun[j].show}</div><div class="cell desc">${shows.sun[j].description}</div></td><td class="cell img-cell"><img src="${shows.sun[j].imgUrl}" draggable="false"/></td></tr>`;
                 }
                 break;
             case 1:
                 for (let j = 0; j < shows.mon.length; j++) {
-                    dayTbls[i].innerHTML += `<tr class="row"><td class="cell timestamp">${shows.mon[j].time}</td><td class=\"info-container\"><div class="cell show">${shows.mon[j].show}</div><div class="cell desc">${shows.mon[j].description}</div></td><td class="cell img-cell"><img src=\"${shows.mon[j].imgUrl}\"/></td></tr>`;
+                    dayTbls[i].innerHTML += `<tr class="row"><td class="cell timestamp">${shows.mon[j].time}</td><td class="info-container"><div class="cell show">${shows.mon[j].show}</div><div class="cell desc">${shows.mon[j].description}</div></td><td class="cell img-cell"><img src="${shows.mon[j].imgUrl}" draggable="false"/></td></tr>`;
                 }
                 break;
             case 2:
                 for (let j = 0; j < shows.tue.length; j++) {
-                    dayTbls[i].innerHTML += `<tr class="row"><td class="cell timestamp">${shows.tue[j].time}</td><td class=\"info-container\"><div class="cell show">${shows.tue[j].show}</div><div class="cell desc">${shows.tue[j].description}</div></td><td class="cell img-cell"><img src=\"${shows.tue[j].imgUrl}\"/></td></tr>`;
+                    dayTbls[i].innerHTML += `<tr class="row"><td class="cell timestamp">${shows.tue[j].time}</td><td class="info-container"><div class="cell show">${shows.tue[j].show}</div><div class="cell desc">${shows.tue[j].description}</div></td><td class="cell img-cell"><img src="${shows.tue[j].imgUrl}" draggable="false"/></td></tr>`;
                 }
                 break;
             case 3:
                 for (let j = 0; j < shows.wed.length; j++) {
-                    dayTbls[i].innerHTML += `<tr class="row"><td class="cell timestamp">${shows.wed[j].time}</td><td class=\"info-container\"><div class="cell show">${shows.wed[j].show}</div><div class="cell desc">${shows.wed[j].description}</div></td><td class="cell img-cell"><img src=\"${shows.wed[j].imgUrl}\"/></td></tr>`;
+                    dayTbls[i].innerHTML += `<tr class="row"><td class="cell timestamp">${shows.wed[j].time}</td><td class="info-container"><div class="cell show">${shows.wed[j].show}</div><div class="cell desc">${shows.wed[j].description}</div></td><td class="cell img-cell"><img src="${shows.wed[j].imgUrl}" draggable="false"/></td></tr>`;
                 }
                 break;
             case 4:
                 for (let j = 0; j < shows.thu.length; j++) {
-                    dayTbls[i].innerHTML += `<tr class="row"><td class="cell timestamp">${shows.thu[j].time}</td><td class=\"info-container\"><div class="cell show">${shows.thu[j].show}</div><div class="cell desc">${shows.thu[j].description}</div></td><td class="cell img-cell"><img src=\"${shows.thu[j].imgUrl}\"/></td></tr>`;
+                    dayTbls[i].innerHTML += `<tr class="row"><td class="cell timestamp">${shows.thu[j].time}</td><td class="info-container"><div class="cell show">${shows.thu[j].show}</div><div class="cell desc">${shows.thu[j].description}</div></td><td class="cell img-cell"><img src="${shows.thu[j].imgUrl}" draggable="false"/></td></tr>`;
                 }
                 break;
             case 5:
                 for (let j = 0; j < shows.fri.length; j++) {
-                    dayTbls[i].innerHTML += `<tr class="row"><td class="cell timestamp">${shows.fri[j].time}</td><td class=\"info-container\"><div class="cell show">${shows.fri[j].show}</div><div class="cell desc">${shows.fri[j].description}</div></td><td class="cell img-cell"><img src=\"${shows.fri[j].imgUrl}\"/></td></tr>`;
+                    dayTbls[i].innerHTML += `<tr class="row"><td class="cell timestamp">${shows.fri[j].time}</td><td class="info-container"><div class="cell show">${shows.fri[j].show}</div><div class="cell desc">${shows.fri[j].description}</div></td><td class="cell img-cell"><img src="${shows.fri[j].imgUrl}" draggable="false"/></td></tr>`;
                 }
                 break;
             case 6:
                 for (let j = 0; j < shows.sat.length; j++) {
-                    dayTbls[i].innerHTML += `<tr class="row"><td class="cell timestamp">${shows.sat[j].time}</td><td class=\"info-container\"><div class="cell show">${shows.sat[j].show}</div><div class="cell desc">${shows.sat[j].description}</div></td><td class="cell img-cell"><img src=\"${shows.sat[j].imgUrl}\"/></td></tr>`;
+                    dayTbls[i].innerHTML += `<tr class="row"><td class="cell timestamp">${shows.sat[j].time}</td><td class="info-container"><div class="cell show">${shows.sat[j].show}</div><div class="cell desc">${shows.sat[j].description}</div></td><td class="cell img-cell"><img src="${shows.sat[j].imgUrl}" draggable="false"/></td></tr>`;
                 }
                 break;
         }
     }
+    let imgs = document.querySelectorAll("img");
+    for (let i = 0; i < imgs.length - 1; i++) {
+        imgs[i].addEventListener("click", () => {
+            imgs[imgs.length - 1].src = imgs[i].src;
+            dialog.showModal();
+        });
+    }
+    dialog.addEventListener("click", () => {
+        dialog.close();
+    });
   </script>
 </body>
 </html>
