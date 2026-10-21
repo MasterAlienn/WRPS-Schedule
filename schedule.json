@@ -34,7 +34,7 @@
             "show": "Sunday Night Blues: Blues Nation",
             "description": "Hosted by Blues Hall of Famer, Mark Kerr!",
             "time": "9:00 PM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/BBB-TV.png"
+            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/SNBlues-updated2024-NEW.png"
         }
     ],
     "mon": [
@@ -104,7 +104,7 @@
             "show": "Rock Land - Live!",
             "description": "Join Julie Devereaux as she spins album cuts and music you just won't here anywhere else!",
             "time": "10:00 AM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/Guest DJs, Speciality Programs and more!.png"
+            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/RockLand-TV.png"
         },
         {
             "show": "Lunch with the Locals",
@@ -122,7 +122,7 @@
             "show": "Blast from the Past - Live!",
             "description": "Enjoy rock classics with DJ Tommy!",
             "time": "3:00 PM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/Guest DJs, Speciality Programs and more!.png"
+            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/TommyTVslide.png"
         },
         {
             "show": "Metafaction Productions",
@@ -266,7 +266,7 @@
             "show": "Rocco's Rewind",
             "description": "DJ Rocco from Rockland and occasional special guests present when music was great!",
             "time": "7:00 PM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/Guest DJs, Speciality Programs and more!.png"
+            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/Rocco's Rewind 02 - for tv .png"
         },
         {
             "show": "'80s at 8 and '90s at 9",
@@ -280,7 +280,7 @@
             "show": "Rock Land",
             "description": "Join Julie Devereaux as she spins album cuts and music you just won't here anywhere else!",
             "time": "10:00 AM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/Guest DJs, Speciality Programs and more!.png"
+            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/RockLand-TV.png"
         },
         {
             "show": "Lunch with the Locals",
@@ -308,3 +308,4 @@
         }
     ]
 }
+// remove placeholder images
