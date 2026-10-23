@@ -8,6 +8,7 @@
     * {
         --table-border-width: 2px;
         font-family: Outfit, Arial, Helvetica, sans-serif;
+        overflow: visible;
     }
     body {
         margin: 0;
@@ -55,7 +56,7 @@
         height: 100%;
         width: 100%;
         display: inline;
-        overflow: scroll;
+        overflow-y: scroll;
     }
     .row {
         border-bottom: var(--table-border-width) solid black;
@@ -80,7 +81,7 @@
         margin-bottom: 1vh;
     }
     #table-container {
-        width: calc(100% - (var(--table-border-width) * 2));
+        width: 100%;
         display: flex;
         margin: auto;
     }
@@ -130,6 +131,21 @@
     @font-face {
         font-family: Outfit;
         src: url("https://masteralienn.github.io/WRPS-Schedule/assets/QGYvz_MVcBeNP4NJtEtqUYLknw.woff2");
+    }
+    @media (max-width: 600px) {
+        #button-container {
+            display: flex;
+            flex-direction: column;
+            height: min-content;
+            margin: 0;
+        }
+        #button-container > button {
+            width: 100%;
+            margin: auto;
+        }
+        #table-container {
+            
+        }
     }
   </style>
 </head>
