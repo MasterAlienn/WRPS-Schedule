@@ -7,6 +7,7 @@
     <style>
         * {
             --table-border-width: 2px;
+            --color: #fff;
             font-family: Outfit, Arial, Helvetica, sans-serif;
         }
         body {
@@ -20,19 +21,19 @@
         div {
             height: 90vh;
             max-width: 100%;
+            color: var(--color);
         }
         button {
             --width: calc(100% / 8);
             --margin: .5%;
-            --btn-color: #222;
-            color: var(--btn-color);
+            color: var(--color);
             height: 100%;
             font-size: larger;
             width: var(--width);
             margin-left: var(--margin);
             margin-right: var(--margin);
             background: none;
-            border: 2px var(--btn-color) solid;
+            border: 2px var(--color) solid;
             overflow: clip;
         }
         img {
@@ -51,7 +52,7 @@
             background-color: #2223;
         }
         .table {
-            border: var(--table-border-width) solid black;
+            border: var(--table-border-width) solid var(--color);
             height: 100%;
             width: 100%;
             display: inline;
@@ -119,7 +120,7 @@
             display: inline;
         }
         .border {
-            border-top: var(--table-border-width) solid black;
+            border-top: var(--table-border-width) solid var(--color);
             height: 0;
             width: 100%;
         }
@@ -128,7 +129,7 @@
             cursor: pointer;
         }
         button.selected {
-            background-color: #4445;
+            background-color: #fff3;
         }
         @font-face {
             font-family: Outfit;
@@ -136,7 +137,7 @@
         }
         @media (max-width: 900px) {
             html {
-                border: 3px solid black;
+                border: 3px solid var(--color);
             }
             .img-cell {
                 max-width: 70%;
@@ -152,7 +153,7 @@
                 width: 100%;
                 margin: auto;
                 border: 0;
-                border-bottom: var(--table-border-width) solid black;
+                border-bottom: var(--table-border-width) solid var(--color);
             }
             #table-container {
                 height: auto;
