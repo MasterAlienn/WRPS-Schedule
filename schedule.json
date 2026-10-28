@@ -4,37 +4,37 @@
             "show": "With Good Reason",
             "description": "Award-winning program by the Virginia Center for Humanities.",
             "time": "8:00 AM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/WGRpromo.png"
+            "imgUrl": "assets/WGRpromo.png"
         },
         {
             "show": "Riff Raff and Rock n' Roll",
             "description": "Hosted by Rock Historian and Documentarian, Rudy Childs!",
             "time": "11:00 AM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/RiffRaffTV-UPDATED copy.png"
+            "imgUrl": "assets/RiffRaffTV-UPDATED copy.png"
         },
         {
             "show": "Lunch with the Locals",
             "description": "Local Artists from the New England Area! Submit your tracks for consideration to music@wrpsrockland.com!",
             "time": "12:00 PM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/Lunch (1920 × 1080 px).jpeg"
+            "imgUrl": "assets/Lunch (1920 × 1080 px).jpeg"
         },
         {
             "show": "Professor X",
             "description": "Join Professor X on a journey through the alternative music timeline!",
             "time": "1:00 PM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/ProfessorX-TVslide-WITHSUN.png"
+            "imgUrl": "assets/ProfessorX-TVslide-WITHSUN.png"
         },
         {
             "show": "Sunday Night Blues: Boston Based Blues",
             "description": "Featuring local New England blues!",
             "time": "8:00 PM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/BBB-TV.png"
+            "imgUrl": "assets/BBB-TV.png"
         },
         {
             "show": "Sunday Night Blues: Blues Nation",
             "description": "Hosted by Blues Hall of Famer, Mark Kerr!",
             "time": "9:00 PM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/SNBlues-updated2024-NEW.png"
+            "imgUrl": "assets/SNBlues-updated2024-NEW.png"
         }
     ],
     "mon": [
@@ -42,55 +42,55 @@
             "show": "Climate Connections",
             "description": "A quick program focusing on climate change from Yale University.",
             "time": "7:00 AM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/Yale Climate Connections.001.png"
+            "imgUrl": "assets/Yale Climate Connections.001.png"
         },
         {
             "show": "Guest DJs, Speciality Shows",
             "description": "",
             "time": "11:00 AM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/Guest DJs, Speciality Programs and more!.png"
+            "imgUrl": "assets/Guest DJs, Speciality Programs and more!.png"
         },
         {
             "show": "Lunch with the Locals",
             "description": "Local Artists from the New England Area! Submit your tracks for consideration to music@wrpsrockland.com!",
             "time": "12:00 PM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/Lunch (1920 × 1080 px).jpeg"
+            "imgUrl": "assets/Lunch (1920 × 1080 px).jpeg"
         },
         {
             "show": "The Time Machine - Live!",
             "description": "DJ Gabby welcomes you aboard! A Throwback to the past featuring music from all eras!",
             "time": "1:00 PM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/Time Machine - for tv  copy.png"
+            "imgUrl": "assets/Time Machine - for tv  copy.png"
         },
         {
             "show": "Guest DJs, Speciality Shows",
             "description": "",
             "time": "3:00 PM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/Guest DJs, Speciality Programs and more!.png"
+            "imgUrl": "assets/Guest DJs, Speciality Programs and more!.png"
         },
         {
             "show": "Metal Mondays: Distorted Frenzy",
             "description": "With DJ John the Claw, loud metal to kick off the night!",
             "time": "7:00 PM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/DistortedFrenzy.png"
+            "imgUrl": "assets/DistortedFrenzy.png"
         },
         {
             "show": "Metal Mondays: You Can't Kill the Metal",
             "description": "With Rock Historian DJ Rudy Childs, featuring local music!",
             "time": "9:00 PM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/YCKTM.png"
+            "imgUrl": "assets/YCKTM.png"
         },
         {
             "show": "Metal Mondays: Symphony of the Night",
             "description": "Hosted by Professor X - music for the creatures of the night!",
             "time": "10:00 PM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/SymphonyOTN.png"
+            "imgUrl": "assets/SymphonyOTN.png"
         },
         {
             "show": "Metal Mondays: Lila's Weekly Recap and More Metal",
             "description": "The Lady Lila of High Voltage brings you weekly news, followed by our own mix of metal!",
             "time": "11:00 PM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/metal Mondays logo with bg.png"
+            "imgUrl": "assets/metal Mondays logo with bg.png"
         }
     ],
     "tue": [
@@ -98,37 +98,37 @@
             "show": "Climate Connections",
             "description": "A quick program focusing on climate change from Yale University.",
             "time": "7:00 AM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/Yale Climate Connections.001.png"
+            "imgUrl": "assets/Yale Climate Connections.001.png"
         },
         {
             "show": "Rock Land - Live!",
             "description": "Join Julie Devereaux as she spins album cuts and music you just won't here anywhere else!",
             "time": "10:00 AM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/RockLand-TV.png"
+            "imgUrl": "assets/RockLand-TV.png"
         },
         {
             "show": "Lunch with the Locals",
             "description": "Local Artists from the New England Area! Submit your tracks for consideration to music@wrpsrockland.com!",
             "time": "12:00 PM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/Lunch (1920 × 1080 px).jpeg"
+            "imgUrl": "assets/Lunch (1920 × 1080 px).jpeg"
         },
         {
             "show": "Guest DJ's, Speciality Shows",
             "description": "",
             "time": "1:00 PM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/Guest DJs, Speciality Programs and more!.png"
+            "imgUrl": "assets/Guest DJs, Speciality Programs and more!.png"
         },
         {
             "show": "Blast from the Past - Live!",
             "description": "Enjoy rock classics with DJ Tommy!",
             "time": "3:00 PM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/TommyTVslide.png"
+            "imgUrl": "assets/TommyTVslide.png"
         },
         {
             "show": "Metafaction Productions",
             "description": "East coast artists in a multi-genre program!",
             "time": "6:00 PM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/MetaFaction.png"
+            "imgUrl": "assets/MetaFaction.png"
         }
     ],
     "wed": [
@@ -136,37 +136,37 @@
             "show": "Climate Connections",
             "description": "A quick program focusing on climate change from Yale University.",
             "time": "7:00 AM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/Yale Climate Connections.001.png"
+            "imgUrl": "assets/Yale Climate Connections.001.png"
         },
         {
             "show": "Guest DJ's, Speciality Shows",
             "description": "",
             "time": "11:00 AM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/Guest DJs, Speciality Programs and more!.png"
+            "imgUrl": "assets/Guest DJs, Speciality Programs and more!.png"
         },
         {
             "show": "Lunch with the Locals",
             "description": "Local Artists from the New England Area! Submit your tracks for consideration to music@wrpsrockland.com!",
             "time": "12:00 PM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/Lunch (1920 × 1080 px).jpeg"
+            "imgUrl": "assets/Lunch (1920 × 1080 px).jpeg"
         },
         {
             "show": "High Voltage Radio - Live!",
             "description": "Get your requests in with Lady Lila - from classic rock to hardcore!",
             "time": "1:00 PM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/HighVoltageRadio copy.png"
+            "imgUrl": "assets/HighVoltageRadio copy.png"
         },
         {
             "show": "Quiet on Set - Live!",
             "description": "Soundtracks, Show Tunes and Shenanigans with your host, Lilly!",
             "time": "3:00 PM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/LILLYQuietOnSet-TVslide.png"
+            "imgUrl": "assets/LILLYQuietOnSet-TVslide.png"
         },
         {
             "show": "Off the Record - Live!",
             "description": "DJ Asher creates a vibe with cool music that spans genres and decades!",
             "time": "4:00 PM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/OffTheRecord.png"
+            "imgUrl": "assets/OffTheRecord.png"
         }
     ],
     "thu": [
@@ -174,55 +174,55 @@
             "show": "Climate Connections",
             "description": "A quick program focusing on climate change from Yale University.",
             "time": "7:00 AM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/Yale Climate Connections.001.png"
+            "imgUrl": "assets/Yale Climate Connections.001.png"
         },
         {
             "show": "Riff Raff and Rock n' Roll",
             "description": "Hosted by Rock Historian and Documentarian, Rudy Childs!",
             "time": "11:00 AM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/RiffRaffTV-UPDATED copy.png"
+            "imgUrl": "assets/RiffRaffTV-UPDATED copy.png"
         },
         {
             "show": "Lunch with the Locals",
             "description": "Local Artists from the New England Area! Submit your tracks for consideration to music@wrpsrockland.com!",
             "time": "12:00 PM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/Lunch (1920 × 1080 px).jpeg"
+            "imgUrl": "assets/Lunch (1920 × 1080 px).jpeg"
         },
         {
             "show": "Mike on the Mic's Oldies Show - Live!",
             "description": "Oldies from the 50s through the 80s - special mixes and more!",
             "time": "1:00 PM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/Mike on the Mike_s TV 2025.png"
+            "imgUrl": "assets/Mike on the Mike_s TV 2025.png"
         },
         {
             "show": "Guest DJ's, Speciality Shows",
             "description": "",
             "time": "2:00 PM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/Guest DJs, Speciality Programs and more!.png"
+            "imgUrl": "assets/Guest DJs, Speciality Programs and more!.png"
         },
         {
             "show": "Professor X - Live!",
             "description": "Join Professor X on a journey through the alternative music timeline!",
             "time": "4:00 PM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/ProfessorX-TVslide-WITHSUN.png"
+            "imgUrl": "assets/ProfessorX-TVslide-WITHSUN.png"
         },
         {
             "show": "Riff Raff and Rock n' Roll",
             "description": "Hosted by Rock Historian and Documentarian, Rudy Childs!",
             "time": "7:00 PM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/RiffRaffTV-UPDATED copy.png"
+            "imgUrl": "assets/RiffRaffTV-UPDATED copy.png"
         },
         {
             "show": "High Voltage Radio",
             "description": "Get your requests in with Lady Lila - from classic rock to hardcore!",
             "time": "1:00 PM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/HighVoltageRadio copy.png"
+            "imgUrl": "assets/HighVoltageRadio copy.png"
         },
         {
             "show": "Throwback Thursdays",
             "description": "Join WRPS's first DJ from 1974! History and music.",
             "time": "11:00 PM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/TBT-updated2025.png"
+            "imgUrl": "assets/TBT-updated2025.png"
         }
     ],
     "fri": [
@@ -230,49 +230,49 @@
             "show": "Climate Connections",
             "description": "A quick program focusing on climate change from Yale University.",
             "time": "7:00 AM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/Yale Climate Connections.001.png"
+            "imgUrl": "assets/Yale Climate Connections.001.png"
         },
         {
             "show": "Guest DJ's, Speciality Shows",
             "description": "",
             "time": "11:00 AM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/Guest DJs, Speciality Programs and more!.png"
+            "imgUrl": "assets/Guest DJs, Speciality Programs and more!.png"
         },
         {
             "show": "Lunch with the Locals",
             "description": "Local Artists from the New England Area! Submit your tracks for consideration to music@wrpsrockland.com!",
             "time": "12:00 PM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/Lunch (1920 × 1080 px).jpeg"
+            "imgUrl": "assets/Lunch (1920 × 1080 px).jpeg"
         },
         {
             "show": "High Voltage Full Feature Fridays",
             "description": "Get your requests in with Lady Lila - from classic rock to hardcore!",
             "time": "1:00 PM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/HighVoltageRadio copy.png"
+            "imgUrl": "assets/HighVoltageRadio copy.png"
         },
         {
             "show": "Soul Session - Live!",
             "description": "DJ DFG spins soul, R&B and all your favorites!",
             "time": "3:00 PM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/SoulSession.png"
+            "imgUrl": "assets/SoulSession.png"
         },
         {
             "show": "The Drive at 5",
             "description": "Kick off your weekend with DJ Keith DeSutter as he mixes local artists with a little bit of everything else!",
             "time": "5:00 PM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/FridayDrive.png"
+            "imgUrl": "assets/FridayDrive.png"
         },
         {
             "show": "Rocco's Rewind",
             "description": "DJ Rocco from Rockland and occasional special guests present when music was great!",
             "time": "7:00 PM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/Rocco's Rewind 02 - for tv .png"
+            "imgUrl": "assets/Rocco's Rewind 02 - for tv .png"
         },
         {
             "show": "'80s at 8 and '90s at 9",
             "description": "Deep cuts from our own collection!",
             "time": "8:00 PM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/80s90s-01.png"
+            "imgUrl": "assets/80s90s-01.png"
         }
     ],
     "sat": [
@@ -280,31 +280,31 @@
             "show": "Rock Land",
             "description": "Join Julie Devereaux as she spins album cuts and music you just won't here anywhere else!",
             "time": "10:00 AM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/RockLand-TV.png"
+            "imgUrl": "assets/RockLand-TV.png"
         },
         {
             "show": "Lunch with the Locals",
             "description": "Local Artists from the New England Area! Submit your tracks for consideration to music@wrpsrockland.com!",
             "time": "12:00 PM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/Lunch (1920 × 1080 px).jpeg"
+            "imgUrl": "assets/Lunch (1920 × 1080 px).jpeg"
         },
         {
             "show": "Metafaction Productions",
             "description": "East coast artists in a multi-genre program!",
             "time": "1:00 PM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/MetaFaction.png"
+            "imgUrl": "assets/MetaFaction.png"
         },
         {
             "show": "The Retro Show",
             "description": "DJ Cleo and his amazing mis from the 60s to the 90s!",
             "time": "5:00 PM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/RetroShow.png"
+            "imgUrl": "assets/RetroShow.png"
         },
         {
             "show": "'80s at 8 and '90s at 9",
             "description": "Deep cuts from our own collection!",
             "time": "8:00 PM",
-            "imgUrl": "https://raw.githubusercontent.com/MasterAlienn/WRPS-Schedule/refs/heads/main/assets/80s90s-01.png"
+            "imgUrl": "assets/80s90s-01.png"
         }
     ]
 }
