@@ -133,7 +133,7 @@
         }
         @font-face {
             font-family: Outfit;
-            src: url("https://masteralienn.github.io/WRPS-Schedule/assets/QGYvz_MVcBeNP4NJtEtqUYLknw.woff2");
+            src: url("assets/QGYvz_MVcBeNP4NJtEtqUYLknw.woff2");
         }
         @media (max-width: 900px) {
             html {
@@ -196,7 +196,7 @@
         let dayTbls = document.querySelectorAll("table");
         let dayBtns = document.getElementsByTagName("button");
         let dialog = document.querySelector("dialog");
-        let shows = await fetch("/schedule.json").then(res => {
+        let shows = await fetch("schedule.json").then(res => {
             if (!res.ok) {
                 throw new Error("Response not ok");
                 return;
