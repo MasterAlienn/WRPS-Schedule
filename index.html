@@ -196,7 +196,7 @@
         let dayTbls = document.querySelectorAll("table");
         let dayBtns = document.getElementsByTagName("button");
         let dialog = document.querySelector("dialog");
-        let shows = await fetch("https://masteralienn.github.io/WRPS-Schedule/schedule.json").then(res => {
+        let shows = await fetch("/schedule.json").then(res => {
             if (!res.ok) {
                 throw new Error("Response not ok");
                 return;
